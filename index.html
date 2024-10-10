@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Laptops</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TechStore</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero text-center text-white d-flex align-items-center justify-content-center">
+  <div class="hero-content">
+    <h1 class="display-4">Bienvenido a TechStore</h1>
+    <p class="lead">Encuentra las mejores laptops a precios increíbles.</p>
+
+  </div>
+</section>
+
+<section id="laptops" class="container py-5">
+  <h2 class="text-center mb-4">Laptops Disponibles</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/XPS.png" class="card-img-top" alt="Dell XPS 13">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dell XPS 13</h5>
+          <p class="card-text">Potente, ligera y versátil.</p>
+          <p class="precio">$999</p>
+          <button class="btn btn-success" onclick="comprarLaptop('Dell XPS 13')">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/MAC.png" class="card-img-top" alt="MacBook Air">
+        <div class="card-body text-center">
+          <h5 class="card-title">MacBook Air</h5>
+          <p class="card-text">Ideal para estudiantes y profesionales.</p>
+          <p class="precio">$1199</p>
+          <button class="btn btn-success" onclick="comprarLaptop('MacBook Air')">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="images/HP.png" class="card-img-top" alt="HP Spectre x360">
+        <div class="card-body text-center">
+          <h5 class="card-title">HP Spectre x360</h5>
+          <p class="card-text">Elegante y eficiente para tareas pesadas.</p>
+          <p class="precio">$899</p>
+          <button class="btn btn-success" onclick="comprarLaptop('HP Spectre x360')">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <p id="mensajeCompra">¡Compra exitosa!</p>
+  </div>
+</div>
+
+<footer class="text-center text-white bg-dark py-4">
+  <p>&copy; 2024 TechStore</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
